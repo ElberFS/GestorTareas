@@ -1,32 +1,30 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Logotipo de Laravel"></a></p>
 
+## Acerca de la API de administración de tareas
 
-## About the Task Management API
+Esta API permite a los usuarios administrar sus tareas diarias a través de operaciones CRUD (Crear, Leer, Actualizar, Eliminar). La API admite la organización de tareas por categorías, asignaciones de fechas límite, marcar tareas como completadas y administración de usuarios con autenticación y autorización.
 
-This API allows users to manage their daily tasks through CRUD operations (Create, Read, Update, Delete). The API supports task organization by categories, deadline assignments, marking tasks as completed, and user management with authentication and authorization.
+## Tecnologías utilizadas
 
-## Technologies Used
+- **PHP**: el lenguaje de programación principal utilizado para la lógica del lado del servidor.
+- **Laravel 9.x**: el marco PHP utilizado para crear la API RESTful con funciones avanzadas como autenticación, autorización y manejo de errores.
+- **MySQL**: La base de datos relacional utilizada para almacenar usuarios, tareas, categorías y etiquetas.
+- **JWT (JSON Web Tokens)**: Se utiliza para la autenticación segura de usuarios.
 
-- **PHP**: The core programming language used for server-side logic.
-- **Laravel 9.x**: The PHP framework utilized to build the RESTful API with advanced features like authentication, authorization, and error handling.
-- **MySQL**: The relational database used to store users, tasks, categories, and tags.
-- **JWT (JSON Web Tokens)**: Used for secure user authentication.
+## Puntos finales de API
 
+### Gestión de tareas
+- **GET** `/api/tasks`: Obtener todas las tareas.
+- **POST** `/api/tasks`: Crear una nueva tarea.
+- **PUT** `/api/tasks/{id}`: Actualizar una tarea existente.
+- **DELETE** `/api/tasks/{id}`: Eliminar una tarea.
 
-## API Endpoints
+### Gestión de categorías
+- **GET** `/api/categories`: Obtener todas las categorías.
+- **POST** `/api/categories`: Crear una nueva categoría.
 
-### Task Management
-- **GET** `/api/tasks`: Fetch all tasks.
-- **POST** `/api/tasks`: Create a new task.
-- **PUT** `/api/tasks/{id}`: Update an existing task.
-- **DELETE** `/api/tasks/{id}`: Delete a task.
+### Gestión de usuarios
+- **GET** `/api/users`: Obtener todos los usuarios.
 
-### Category Management
-- **GET** `/api/categories`: Fetch all categories.
-- **POST** `/api/categories`: Create a new category.
-
-### User Management
-- **GET** `/api/users`: Fetch all users.
-
-### Email Notifications
-- **Description**: Email notifications are sent automatically when a task is successfully created or updated, informing the user of the task's status.
+### Notificaciones por correo electrónico
+- **Descripción**: Las notificaciones por correo electrónico se envían automáticamente cuando se crea o actualiza correctamente una tarea, informando al usuario sobre el estado de la tarea.

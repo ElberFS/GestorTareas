@@ -11,10 +11,7 @@ This API allows users to manage their daily tasks through CRUD operations (Creat
 - **Laravel 9.x**: The PHP framework utilized to build the RESTful API with advanced features like authentication, authorization, and error handling.
 - **MySQL**: The relational database used to store users, tasks, categories, and tags.
 - **JWT (JSON Web Tokens)**: Used for secure user authentication.
-- **Composer**: Dependency management for PHP packages.
-- **Apache**: The web server used to serve the application.
-- **Mailtrap**: For testing email notifications (optional).
-- **Docker**: For containerizing the application (optional).
+
 
 ## API Endpoints
 
@@ -33,7 +30,3 @@ This API allows users to manage their daily tasks through CRUD operations (Creat
 
 ### Email Notifications
 - **Description**: Email notifications are sent automatically when a task is successfully created or updated, informing the user of the task's status.
-
-## License
-
-The Task Management API is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

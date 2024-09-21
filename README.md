@@ -1,4 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Logotipo de Laravel"></a></p>
+## Instalcion 
+- **1** : Ejecutar Laravel New NombreProyecto
+- **2** : Ejecutar Migraciones Mysql  
+- **nota** : Todo se hizo con phpadmi de XAMPP por lo que se uso el puerto 3306  
 
 ## Acerca de la API de administración de tareas
 
